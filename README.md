@@ -23,7 +23,6 @@ ID   xms
 Pas  perak
 
 
-php 20k1.php
 
 php 15k1.php
 
