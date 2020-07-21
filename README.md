@@ -8,7 +8,7 @@ Pkg install php
 
 pkg install git
 
-git clone https://github.com/XionManSit/xion
+git clone https://github.com/XionManSit/newbie
 
 ls 
 
