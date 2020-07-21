@@ -12,7 +12,7 @@ git clone https://github.com/XionManSit/xion
 
 ls 
 
-cd xion
+cd newbie
 
 ls
 
