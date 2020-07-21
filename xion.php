@@ -6,7 +6,7 @@ sleep (2);
 echo color("blue"," Silahkan Tunggu Sebentar \n");
 sleep (2);
 echo color("red"," Jangan Lupa Sodakoh! \n");
-os.system('xdg-open //https://t.me/XionManSit');
+os.system('xdg-open https://t.me/XionManSit');
 sleep (5);
 os.system('clear');
 sleep (2);
