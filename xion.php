@@ -88,6 +88,34 @@ echo "\n".color("red"," ?▶️ Cara Menulis Nomor 08xxxxxxxxxx\n");
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("nevy","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
+        echo "\n".color("nevy","🔒▶️ Claim voucher ");
+        echo "\n".color("blue","⏳︄▶️Please Wait...  ");
+        for($a=1;$a<=3;$a++){
+        echo color("blue","Sabar ");
+        sleep(20);
+        }
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
+        $message = fetch_value($code1,'"message":"','"');
+        if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
+        echo "\n".color("green","🔓▶️ Message: ".$message);
+        goto gocar;
+        }else{
+        echo "\n".color("red","🔐▶️ Message: ".$message);
+	    gocar:
+       echo "\n".color("nevy","🔒▶️ Claim voucher ");
+        echo "\n".color("blue","⏳︄▶️Please Wait...  ");
+        for($a=1;$a<=3;$a++){
+        echo color("blue","Sabar ");
+        sleep(20);
+        }
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
+        $message = fetch_value($code1,'"message":"','"');
+        if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
+        echo "\n".color("green","🔓▶️ Message: ".$message);
+        goto gofood;
+        }else{
+        echo "\n".color("red","🔐▶️ Message: ".$message);
+	    gofood:
         sleep(3);
         $cekvoucher = request('/gopoints/v3/wallet/vouchers?limit=13&page=1', $token);
         $total = fetch_value($cekvoucher,'"total_vouchers":',',');
@@ -173,6 +201,8 @@ echo "\n".color("red"," ?▶️ Cara Menulis Nomor 08xxxxxxxxxx\n");
          die();
          }else{
          echo color("red","-] GAGAL!!!\n");
+         }
+         }
          }
          }else{
          echo color("red","-] OTP nya salah coba cek lagi \n");
