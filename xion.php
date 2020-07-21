@@ -1,6 +1,6 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
-include "function.php";
+include "function1.php";
 os.system('clear');
 sleep (2);
 echo color("blue"," Silahkan Tunggu Sebentar \n");
