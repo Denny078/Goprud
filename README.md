@@ -22,9 +22,9 @@ ID   xms
 
 Pas  perak
 
-
-
 php 15k1.php
-
-Gak auto claim jangan di pakek
+.
+.
+.
+( Di sarankan Dapet Voucher Langsung Login )
 
