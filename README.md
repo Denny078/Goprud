@@ -16,7 +16,7 @@ cd newbie
 
 ls
 
-php xion.php 
+php newbie.php 
 
 ID   xms
 
