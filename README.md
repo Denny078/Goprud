@@ -24,6 +24,3 @@ Pas  perak
 
 php 15k.php
 
-
-( Di sarankan Dapet Voucher Langsung Login )
-
