@@ -12,7 +12,7 @@ git clone https://github.com/XionManSit/newbie
 
 ls 
 
-cd newbie
+cd newbie-juli
 
 ls
 
