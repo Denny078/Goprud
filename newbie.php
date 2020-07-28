@@ -92,7 +92,7 @@ echo "\n".color("red"," ?▶️ Cara Menulis Nomor 08xxxxxxxxxx\n");
         echo "\n".color("blue","⏳︄▶️Please Wait...  ");
         for($a=1;$a<=3;$a++){
         echo color("blue","Sabar ");
-        sleep(20);
+        sleep(30);
         }
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
